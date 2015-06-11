@@ -1,7 +1,6 @@
 # Fresh Development Environment Setup
 - basic.sh
-
--- installs basic apps and configures the system
+  - installs basic apps and configures the system
 
 - ror-setup.sh
 
