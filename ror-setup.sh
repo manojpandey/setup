@@ -18,8 +18,6 @@ sudo apt-get install libgdbm-dev libncurses5-dev automake libtool bison libffi-d
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 curl -sSL https://get.rvm.io | bash -s stable
 source ~/.rvm/scripts/rvm
-echo "source ~/.rvm/scripts/rvm" >> .bashrc
-echo "source ~/.rvm/scripts/rvm" >> .zshrc
 
 # test rvm
 type rvm | head -1
@@ -31,6 +29,11 @@ ruby -v
 
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 gem install bundler
+
+echo "source ~/.rvm/scripts/rvm" >> .bashrc
+echo "export PATH="$PATH:$HOME/.rvm/bin"" >> .bashrc
+echo "source ~/.rvm/scripts/rvm" >> .zshrc
+echo "export PATH="$PATH:$HOME/.rvm/bin"" >> .zshrc
 
 #Git
 git config --global color.ui true
@@ -56,8 +59,7 @@ sudo apt-get install mysql-server mysql-client libmysqlclient-dev
 sudo sh -c "echo 'deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main' > /etc/apt/sources.list.d/pgdg.list"
 wget --quiet -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | sudo apt-key add -
 sudo apt-get update
-sudo apt-get install postgresql-common
-sudo apt-get install postgresql-9.4 libpq-dev pgadmin3
+sudo apt-get install postgresql-common postgresql-9.4 libpq-dev pgadmin3
 
 # Creating User for PostgreSQL
 sudo -u postgres createuser USERNAME -s

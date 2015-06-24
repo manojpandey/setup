@@ -16,7 +16,7 @@ sudo wget -O - http://www.lamaresh.net/apt/key.gpg | apt-key add -
 mkdir ~/Development
 
 # basic apps
-sudo apt-get -y install libxss1 sublime-text-installer git curl gparted google-chrome-stable google-talkplugin linux-headers-generic build-essential curl zsh vlc bleachbit python-pip guake
+sudo apt-get install libxss1 sublime-text-installer git curl gparted google-chrome-stable google-talkplugin linux-headers-generic build-essential curl zsh vlc bleachbit python-pip guake
 
 #oh-my-zsh
 wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
