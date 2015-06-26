@@ -72,10 +72,9 @@ It consists of setting up common tools, apps,  python and ruby development setup
 # Python Development Environment Setup
 
 ## pip and virtualenv
-    $ sudo apt-get install python-pip
-
-    $ pip install --upgrade setuptools
-    $ pip install --upgrade pip
+	$ sudo apt-get install python-setuptools
+	$ sudo easy_install pip
+	$ sudo pip install --upgrade pip virtualenv virtualenvwrapper
  
 #### cache pip-installed packages to avoid re-downloading
 	echo "export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache" >> ~/.bashrc
@@ -141,8 +140,13 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 		$
 
+## MOngoDB
 
-
+	$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
+	$ echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
+	$ sudo apt-get update
+	$ sudo apt-get install -y mongodb-org
+	
 ## gcc
 
 	$
