@@ -229,6 +229,8 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$ sudo apt-get update
 	$ sudo apt-get install grub-customizer
 
+##Unity Tweak Tool
+	$ sudo apt-get install unity-tweak-tool
 ---
 
 ---
