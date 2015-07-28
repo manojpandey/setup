@@ -241,6 +241,34 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$ sudo add-apt-repository ppa:thefanclub/ubuntu-after-install
 	$ sudo apt-get update
 	$ sudo apt-get install ubuntu-after-install
+	
+##PostInstallerF
+
+	$ wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/app-install-data-postinstallerf_1.0-6_all.deb
+	$ wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/postinstallerf_1.5-13_all.deb
+	
+	$ sudo add-apt-repository ppa:webupd8team/y-ppa-manager
+	$ sudo apt-get update
+	$ sudo apt-get install yad
+	
+	$ sudo apt-get install packagekit
+	
+	$ sudo dpkg -i app-install-data-postinstallerf_1.0-6_all.deb
+	$ sudo dpkg -i postinstallerf_1.5-13_all.deb
+	$ sudo apt-get install -f
+	
+##Deluge
+	$ sudo apt-get install deluge
+
+##Wine
+	$ sudo apt-get install wine
+
+##Compiz
+	$ sudo apt-get install compiz compizconfig-settings-manager compiz-plugins
+
+##Samba
+	http://www.unixmen.com/howto-install-and-configure-samba-share-in-ubuntu/
+
 ---
 
 ---
