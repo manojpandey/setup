@@ -231,6 +231,16 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 ##Unity Tweak Tool
 	$ sudo apt-get install unity-tweak-tool
+	
+##Ubuntu Tweak
+	Download the .deb file from the http://ubuntu-tweak.com/.
+	$ sudo dpkg -i ubuntu-tweak_0.8.7-1~trusty2_all.deb 
+	$ sudo apt-get install -f
+	
+##Ubuntu After Install
+	$ sudo add-apt-repository ppa:thefanclub/ubuntu-after-install
+	$ sudo apt-get update
+	$ sudo apt-get install ubuntu-after-install
 ---
 
 ---
