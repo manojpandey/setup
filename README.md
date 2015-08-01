@@ -215,6 +215,9 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$ sudo apt-add-repository ppa:paolorotolo/android-studio
 	$ sudo apt-get update
 	$ sudo apt-get install android-studio
+	
+## 32-bit Compatibility Libraries
+	$ sudo apt-get install libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1 lib32z1-dev
 
 ## Virtual Box
     $ sudo wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | apt-key add -
