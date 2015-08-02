@@ -21,7 +21,7 @@ sudo apt-get install libxss1 sublime-text-installer git curl gparted google-chro
 #oh-my-zsh
 wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 echo "plugins=(rails python django pyenv sublime github git ruby sudo tmux)" >> ~/.zshrc
-echo 'DEFAULT_USER="manojpandey"' >> ~/.zshrc
+echo 'DEFAULT_USER="akul08"' >> ~/.zshrc
 
 sudo apt-get autoclean
 sudo apt-get autoremove
