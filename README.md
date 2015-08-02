@@ -44,10 +44,10 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$ git config --global push.default simple
 `# change your name in " "`
 
-	$ git config --global user.name "Manoj Pandey"
+	$ git config --global user.name "Akul Mehra"
 `# change your email in " "`
 
-	$ git config --global user.email "manojpandey1996@gmail.com"
+	$ git config --global user.email "mehra.akul@gmail.com"
 
 ## Heroku
     $ sudo wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
@@ -65,7 +65,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 `# Change name in " "`
 
-    $ echo 'DEFAULT_USER="manoj"' >> ~/.zshrc
+    $ echo 'DEFAULT_USER="akul08"' >> ~/.zshrc
     $ chsh -s $(which zsh)
 
 
@@ -218,6 +218,8 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	
 ## 32-bit Compatibility Libraries
 	$ sudo apt-get install libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1 lib32z1-dev
+	$ sudo apt-get install build-essential autoconf libtool pkg-config python-opengl python-imaging python-pyrex python-pyside.qtopengl idle-python2.7 qt4-dev-tools qt4-designer libqtgui4 libqtcore4 libqt4-xml libqt4-test libqt4-script libqt4-network libqt4-dbus python-qt4 python-qt4-gl libgle3 python-dev
+
 
 ## Virtual Box
     $ sudo wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | apt-key add -
