@@ -273,6 +273,14 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 ##Samba
 	http://www.unixmen.com/howto-install-and-configure-samba-share-in-ubuntu/
+	
+##Kivy
+	$ sudo add-apt-repository ppa:kivy-team/kivy
+	$ sudo apt-get install update
+	$ sudo apt-get install python-kivy
+	
+##OpenCV
+	$ sudo apt-get install libopencv-dev python-opencv
 
 ---
 
