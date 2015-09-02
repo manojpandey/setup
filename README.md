@@ -19,7 +19,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 ### Sublime text
     $ sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
     $ sudo apt-get install sublime-text-installer
-
+    sublime package : djanerio allautocomplete emmet sublimepythonide sidebar enhancement  
 ### Vim
     $ sudo apt-get install vim
 
@@ -44,10 +44,10 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$ git config --global push.default simple
 `# change your name in " "`
 
-	$ git config --global user.name "Manoj Pandey"
+	$ git config --global user.name "Akul Mehra"
 `# change your email in " "`
 
-	$ git config --global user.email "manojpandey1996@gmail.com"
+	$ git config --global user.email "mehra.akul@gmail.com"
 
 ## Heroku
     $ sudo wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
@@ -65,7 +65,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 `# Change name in " "`
 
-    $ echo 'DEFAULT_USER="manoj"' >> ~/.zshrc
+    $ echo 'DEFAULT_USER="akul08"' >> ~/.zshrc
     $ chsh -s $(which zsh)
 
 
@@ -215,6 +215,11 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$ sudo apt-add-repository ppa:paolorotolo/android-studio
 	$ sudo apt-get update
 	$ sudo apt-get install android-studio
+	
+## 32-bit Compatibility Libraries
+	$ sudo apt-get install libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1 lib32z1-dev
+	$ sudo apt-get install build-essential autoconf libtool pkg-config python-opengl python-imaging python-pyrex python-pyside.qtopengl idle-python2.7 qt4-dev-tools qt4-designer libqtgui4 libqtcore4 libqt4-xml libqt4-test libqt4-script libqt4-network libqt4-dbus python-qt4 python-qt4-gl libgle3 python-dev
+
 
 ## Virtual Box
     $ sudo wget -q http://download.virtualbox.org/virtualbox/debian/oracle_vbox.asc -O- | apt-key add -
@@ -228,6 +233,54 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$ sudo add-apt-repository ppa:danielrichter2007/grub-customizer
 	$ sudo apt-get update
 	$ sudo apt-get install grub-customizer
+
+##Unity Tweak Tool
+	$ sudo apt-get install unity-tweak-tool
+	
+##Ubuntu Tweak
+	Download the .deb file from the http://ubuntu-tweak.com/.
+	$ sudo dpkg -i ubuntu-tweak_0.8.7-1~trusty2_all.deb 
+	$ sudo apt-get install -f
+	
+##Ubuntu After Install
+	$ sudo add-apt-repository ppa:thefanclub/ubuntu-after-install
+	$ sudo apt-get update
+	$ sudo apt-get install ubuntu-after-install
+	
+##PostInstallerF
+
+	$ wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/app-install-data-postinstallerf_1.0-6_all.deb
+	$ wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/postinstallerf_1.5-13_all.deb
+	
+	$ sudo add-apt-repository ppa:webupd8team/y-ppa-manager
+	$ sudo apt-get update
+	$ sudo apt-get install yad
+	
+	$ sudo apt-get install packagekit
+	
+	$ sudo dpkg -i app-install-data-postinstallerf_1.0-6_all.deb
+	$ sudo dpkg -i postinstallerf_1.5-13_all.deb
+	$ sudo apt-get install -f
+	
+##Deluge
+	$ sudo apt-get install deluge
+
+##Wine
+	$ sudo apt-get install wine
+
+##Compiz
+	$ sudo apt-get install compiz compizconfig-settings-manager compiz-plugins
+
+##Samba
+	http://www.unixmen.com/howto-install-and-configure-samba-share-in-ubuntu/
+	
+##Kivy
+	$ sudo add-apt-repository ppa:kivy-team/kivy
+	$ sudo apt-get install update
+	$ sudo apt-get install python-kivy
+	
+##OpenCV
+	$ sudo apt-get install libopencv-dev python-opencv
 
 ---
 
