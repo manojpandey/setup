@@ -28,6 +28,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 ---
 ## Google chrome
     $ sudo add-apt-repository -y "deb http://dl.google.com/linux/chrome/deb/ stable main"
+    $ sudo apt-get update
     $ sudo wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub
     $ sudo apt-get install google-chrome-stable
 
@@ -106,7 +107,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 - Flask: The most user-friendly web framework in the Python ecosystem
 
-		$
+		$ pip install flask
 
 - SQLAlchemy: Is there even a competitor for database ORMs? I honestly don't know the answer to that.
 
@@ -270,7 +271,13 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 ##Compiz
 	$ sudo apt-get install compiz compizconfig-settings-manager compiz-plugins
-
+	Tick Following:
+		Desktop Cube
+		Rotate Cube
+		Animations - Magic Lamp
+		Cube Reflection and Deformation
+		Wobbly Windows
+		Workspace Naming
 ##Samba
 	http://www.unixmen.com/howto-install-and-configure-samba-share-in-ubuntu/
 	
@@ -282,6 +289,10 @@ It consists of setting up common tools, apps,  python and ruby development setup
 ##OpenCV
 	$ sudo apt-get install libopencv-dev python-opencv
 
+##Guake Terminal
+	$ sudo apt-get install guake -y
+	Add guake to Startup Applications
+	Change shortcut to shift++.
 ---
 
 ---
