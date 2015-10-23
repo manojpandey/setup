@@ -294,7 +294,14 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	Add guake to Startup Applications
 	Change shortcut to shift++.
 ---
-
+##Node 
+#Setup With Ubuntu
+	$ curl --silent --location https://deb.nodesource.com/setup_4.x | sudo bash -
+	$ sudo apt-get install --yes nodejs
+#Setup With Debian(root user):
+	$ apt-get install curl
+        $ curl --silent --location https://deb.nodesource.com/setup_4.x | bash -
+        $ apt-get install --yes nodejs
 ---
 # Finishing up
 
