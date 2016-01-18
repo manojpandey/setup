@@ -1,4 +1,4 @@
-#Full Linux Development Setup 
+#Full Linux Development Setup
 **Note:** `Only Debian based distros.`
 
 This is a walk through to set up a development environment on a freshly installed Ubuntu or Linux Mint.
@@ -23,7 +23,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 ### Vim
     $ sudo apt-get install vim
 
-    
+
 
 ---
 ## Google chrome
@@ -76,7 +76,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$ sudo apt-get install python-setuptools
 	$ sudo easy_install pip
 	$ sudo pip install --upgrade pip virtualenv virtualenvwrapper
- 
+
 #### cache pip-installed packages to avoid re-downloading
 	echo "export PIP_DOWNLOAD_CACHE=$HOME/.pip/cache" >> ~/.bashrc
 
@@ -98,11 +98,11 @@ It consists of setting up common tools, apps,  python and ruby development setup
 		pip install ipython
 
 - virtualenvwrapper: Makes working with virtualenvs a breeze
-	
+
 		pip install virtualenvwrapper
 
 - BeautifulSoup: HTML/XML manipulation library
-	
+
 		pip install bs4
 
 - Flask: The most user-friendly web framework in the Python ecosystem
@@ -147,7 +147,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$ echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
 	$ sudo apt-get update
 	$ sudo apt-get install -y mongodb-org
-	
+
 ## gcc
 
 	$
@@ -160,7 +160,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$
 ## Django
 
-    $ 
+    $
 
 ## Dropbox
     $ sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
@@ -187,7 +187,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$ sudo apt-get install spotify-client
 
 ## Load indicator
-	$ sudo add-apt-repository ppa:indicator-multiload/stable-daily 
+	$ sudo add-apt-repository ppa:indicator-multiload/stable-daily
 	$ sudo apt-get update
 	$ sudo apt-get install indicator-multiload
 
@@ -216,7 +216,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$ sudo apt-add-repository ppa:paolorotolo/android-studio
 	$ sudo apt-get update
 	$ sudo apt-get install android-studio
-	
+
 ## 32-bit Compatibility Libraries
 	$ sudo apt-get install libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1 lib32z1-dev
 	$ sudo apt-get install build-essential autoconf libtool pkg-config python-opengl python-imaging python-pyrex python-pyside.qtopengl idle-python2.7 qt4-dev-tools qt4-designer libqtgui4 libqtcore4 libqt4-xml libqt4-test libqt4-script libqt4-network libqt4-dbus python-qt4 python-qt4-gl libgle3 python-dev
@@ -237,32 +237,32 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 ##Unity Tweak Tool
 	$ sudo apt-get install unity-tweak-tool
-	
+
 ##Ubuntu Tweak
 	Download the .deb file from the http://ubuntu-tweak.com/.
-	$ sudo dpkg -i ubuntu-tweak_0.8.7-1~trusty2_all.deb 
+	$ sudo dpkg -i ubuntu-tweak_0.8.7-1~trusty2_all.deb
 	$ sudo apt-get install -f
-	
+
 ##Ubuntu After Install
 	$ sudo add-apt-repository ppa:thefanclub/ubuntu-after-install
 	$ sudo apt-get update
 	$ sudo apt-get install ubuntu-after-install
-	
+
 ##PostInstallerF
 
 	$ wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/app-install-data-postinstallerf_1.0-6_all.deb
 	$ wget -c http://sourceforge.net/projects/postinstaller/files/ubuntu/postinstallerf_1.5-13_all.deb
-	
+
 	$ sudo add-apt-repository ppa:webupd8team/y-ppa-manager
 	$ sudo apt-get update
 	$ sudo apt-get install yad
-	
+
 	$ sudo apt-get install packagekit
-	
+
 	$ sudo dpkg -i app-install-data-postinstallerf_1.0-6_all.deb
 	$ sudo dpkg -i postinstallerf_1.5-13_all.deb
 	$ sudo apt-get install -f
-	
+
 ##Deluge
 	$ sudo apt-get install deluge
 
@@ -280,12 +280,12 @@ It consists of setting up common tools, apps,  python and ruby development setup
 		Workspace Naming
 ##Samba
 	http://www.unixmen.com/howto-install-and-configure-samba-share-in-ubuntu/
-	
+
 ##Kivy
 	$ sudo add-apt-repository ppa:kivy-team/kivy
 	$ sudo apt-get install update
 	$ sudo apt-get install python-kivy
-	
+
 ##OpenCV
 	$ sudo apt-get install libopencv-dev python-opencv
 
@@ -294,7 +294,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	Add guake to Startup Applications
 	Change shortcut to shift++.
 ---
-#Node 
+#Node
 ##Setup With Ubuntu
 	$ curl --silent --location https://deb.nodesource.com/setup_4.x | sudo bash -
 	$ sudo apt-get install --yes nodejs
@@ -302,6 +302,20 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$ apt-get install curl
         $ curl --silent --location https://deb.nodesource.com/setup_4.x | bash -
         $ apt-get install --yes nodejs
+
+##Setup Node.js v5.0 on Ubuntu
+
+  ###Build Essential tools
+  sudo apt-get install -y build-essential
+
+  ###Download Node.js v5.0
+
+  curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
+
+  ###Install with
+
+  sudo apt-get install -y nodejs
+
 ---
 # Finishing up
 
