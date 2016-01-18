@@ -305,18 +305,18 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 ##Setup Node.js v5.0 on Ubuntu (THIS WILL NOT UPDATE NODE)
 
-  ###Build Essential tools
+  ### Build Essential tools
   sudo apt-get install -y build-essential
 
-  ###Download Node Source
+  ### Download Node Source
 
   curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
 
-  ###Install with
+  ### Install with
 
   sudo apt-get install -y nodejs
 
-  (NOTE) - Update Node by deleting the previous version and installing the newer one
+  #### (NOTE) - Update Node by deleting the previous version and installing the newer one
 ---
 # Finishing up
 
