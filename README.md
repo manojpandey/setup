@@ -306,17 +306,27 @@ It consists of setting up common tools, apps,  python and ruby development setup
 ##Setup Node.js v5.0 on Ubuntu (THIS WILL NOT UPDATE NODE)
 
 ###Build Essential tools
-  sudo apt-get install -y build-essential
+    $ sudo apt-get install -y build-essential
 
 ### Download Node Source
 
-  curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
+    $ curl -sL https://deb.nodesource.com/setup_5.x | sudo -E bash -
 
 ### Install with
 
-  sudo apt-get install -y nodejs
+    $ sudo apt-get install -y nodejs
 
 #### (NOTE) - Update Node by deleting the previous version and installing the newer one
+
+# R
+	# Change the ubuntu package version from wily to your system's.   
+	$ sudo sh -c 'echo "deb http://cran.rstudio.com/bin/linux/ubuntu wily/" >> /etc/apt/sources.list'
+	$ gpg --keyserver keyserver.ubuntu.com --recv-key E084DAB9
+	$ gpg -a --export E084DAB9 | sudo apt-key add -
+	$ sudo apt-get update
+	$ sudo apt-get -y install r-base
+	$ R
+
 ---
 # Finishing up
 
