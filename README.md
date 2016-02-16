@@ -295,13 +295,24 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	Change shortcut to shift++.
 ---
 #Node
-##Setup With Ubuntu
-	$ curl --silent --location https://deb.nodesource.com/setup_4.x | sudo bash -
-	$ sudo apt-get install --yes nodejs
-##Setup With Debian(root user):
-	$ apt-get install curl
-        $ curl --silent --location https://deb.nodesource.com/setup_4.x | bash -
-        $ apt-get install --yes nodejs
+## Remove any previously installed packages
+
+THE FOLLOWING IS THE BEST WAY TO COMPLETELY UNINSTALL NODE + NPM:
+1	go to /usr/local/lib and delete any node and node_modules
+2	go to /usr/local/include and delete any node and node_modules directory
+3	if you installed with brew install node, then run brew uninstall node in your terminal
+4	check your Home directory for any local or lib or include folders, and delete any node or node_modules from there
+5	go to /usr/local/bin and delete any node executable
+YOU MAY NEED TO DO THE ADDITIONAL INSTRUCTIONS AS WELL:
+1	sudo rm /usr/local/bin/npm
+2	sudo rm /usr/local/share/man/man1/node.1
+3	sudo rm /usr/local/lib/dtrace/node.d
+4	sudo rm -rf ~/.npm
+5	sudo rm -rf ~/.node-gyp
+6	sudo rm /opt/local/bin/node
+7	sudo rm /opt/local/include/node
+8	sudo rm -rf /opt/local/lib/node_modules
+9	sudo rm -rf /usr/local/include/node/
 
 ##Setup Node.js v5.0 on Ubuntu (THIS WILL NOT UPDATE NODE)
 
