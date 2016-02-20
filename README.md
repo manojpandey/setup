@@ -153,7 +153,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$
 
 ## g++
-	$
+	$ sudo apt-get -y install g++
 
 ## ruby and rails
 
