@@ -157,7 +157,8 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 ## ruby and rails
 
-	$
+	- Check out [this](https://github.com/manojpandey/setup/blob/master/ror-setup.sh) script
+
 ## Django
 
     $
