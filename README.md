@@ -329,6 +329,30 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
     $ sudo apt-get install -y nodejs
 
+### Steps to resolve "‘failed to fetch" error which might come
+
+	"Failed to fetch http://dl.google.com/linux/chrome/deb/dists/stable/Release
+	Unable to find expected entry ‘main/binary-i386/Packages’ in Release file 
+	(Wrong sources.list entry or malformed file)"
+	
+	1. Open a new Terminal window and run the following command (assuming you’re on the Stable Channel,
+		if not, see the featured comment):
+
+		sudo gedit /etc/apt/sources.list.d/google-chrome.list
+		
+	2.In the text file that opens edit the file so that the line reads:
+		
+		deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
+			
+		The only addition you need to make is entering the [amd64] architecture after
+		‘deb’ but preceding the ‘http’. Do not edit or replace any other text in this file.
+		
+	3.Hit Save. Close the Gedit window.
+
+		Now return to the Terminal and refresh your package list by running:
+
+		sudo apt-get update
+
 #### (NOTE) - Update Node by deleting the previous version and installing the newer one
 
 # R
