@@ -30,8 +30,7 @@ ruby -v
 echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 gem install bundler
 
-echo "source ~/.rvm/scripts/rvm" >> .bashrc
-echo "export PATH="$PATH:$HOME/.rvm/bin"" >> .bashrc
+echo -e "\nRequired by rvm\n[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"" >> ~/.bashrc
 echo "source ~/.rvm/scripts/rvm" >> .zshrc
 echo "export PATH="$PATH:$HOME/.rvm/bin"" >> .zshrc
 
