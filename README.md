@@ -218,6 +218,19 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$ sudo apt-add-repository ppa:paolorotolo/android-studio
 	$ sudo apt-get update
 	$ sudo apt-get install android-studio
+	
+## Android SDK
+	$ sudo apt-get install openjdk-7-jdk
+	$ wget http://dl.google.com/android/android-sdk_r24.2-linux.tgz
+	$ tar -xvf android-sdk_r24.2-linux.tgz
+	$ cd android-sdk-linux/tools
+	$ ./android update sdk --no-ui
+	$ vi ~/.zshrc << EOT
+	export PATH=${PATH}:$HOME/sdk/android-sdk-linux/platform-tools:$HOME/sdk/android-sdk-linux/tools:$HOME/sdk/android-sdk-linux/build-tools/22.0.1/
+	EOT
+	$ source ~/.zshrc
+	$ sudo apt-get install libc6:i386 libstdc++6:i386
+	$ sudo apt-get install zlib1g:i386
 
 ## 32-bit Compatibility Libraries
 	$ sudo apt-get install libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1 lib32z1-dev
