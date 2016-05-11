@@ -18,6 +18,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 ---
 ### Sublime text
     $ sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
+    $ sudo apt-get update
     $ sudo apt-get install sublime-text-installer
     sublime package : djanerio allautocomplete emmet sublimepythonide sidebar enhancement  
 ### Vim
