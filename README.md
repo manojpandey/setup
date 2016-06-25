@@ -18,6 +18,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 ---
 ### Sublime text
     $ sudo add-apt-repository -y ppa:webupd8team/sublime-text-3
+    $ sudo apt-get update
     $ sudo apt-get install sublime-text-installer
     sublime package : djanerio allautocomplete emmet sublimepythonide sidebar enhancement  
 ### Vim
@@ -153,11 +154,12 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$
 
 ## g++
-	$
+	$ sudo apt-get -y install g++
 
 ## ruby and rails
 
-	$
+	- Check out [this](https://github.com/manojpandey/setup/blob/master/ror-setup.sh) script
+
 ## Django
 
     $
@@ -225,6 +227,19 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$ sudo apt-add-repository ppa:paolorotolo/android-studio
 	$ sudo apt-get update
 	$ sudo apt-get install android-studio
+	
+## Android SDK
+	$ sudo apt-get install openjdk-7-jdk
+	$ wget http://dl.google.com/android/android-sdk_r24.2-linux.tgz
+	$ tar -xvf android-sdk_r24.2-linux.tgz
+	$ cd android-sdk-linux/tools
+	$ ./android update sdk --no-ui
+	$ vi ~/.zshrc << EOT
+	export PATH=${PATH}:$HOME/sdk/android-sdk-linux/platform-tools:$HOME/sdk/android-sdk-linux/tools:$HOME/sdk/android-sdk-linux/build-tools/22.0.1/
+	EOT
+	$ source ~/.zshrc
+	$ sudo apt-get install libc6:i386 libstdc++6:i386
+	$ sudo apt-get install zlib1g:i386
 
 ## 32-bit Compatibility Libraries
 	$ sudo apt-get install libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1 lib32z1-dev
@@ -304,13 +319,25 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	Change shortcut to shift++.
 ---
 #Node
-##Setup With Ubuntu
-	$ curl --silent --location https://deb.nodesource.com/setup_4.x | sudo bash -
-	$ sudo apt-get install --yes nodejs
-##Setup With Debian(root user):
-	$ apt-get install curl
-        $ curl --silent --location https://deb.nodesource.com/setup_4.x | bash -
-        $ apt-get install --yes nodejs
+## Remove any previously installed packages
+	
+	Go to /usr/local/lib and delete any node and node_modules
+	Go to /usr/local/include and delete any node and node_modules directory
+	If you installed with brew install node, then run brew uninstall node in your terminal
+	Check your Home directory for any local or lib or include folders, and delete any node or node_modules from there
+	Go to /usr/local/bin and delete any node executable
+
+	After that, do this:
+	
+	sudo rm /usr/local/bin/npm
+	sudo rm /usr/local/share/man/man1/node.1
+	sudo rm /usr/local/lib/dtrace/node.d
+	sudo rm -rf ~/.npm
+	sudo rm -rf ~/.node-gyp
+	sudo rm /opt/local/bin/node
+	sudo rm /opt/local/include/node
+	sudo rm -rf /opt/local/lib/node_modules
+	sudo rm -rf /usr/local/include/node/
 
 ##Setup Node.js v5.0 on Ubuntu (THIS WILL NOT UPDATE NODE)
 
@@ -324,6 +351,30 @@ It consists of setting up common tools, apps,  python and ruby development setup
 ### Install with
 
     $ sudo apt-get install -y nodejs
+
+### Steps to resolve "‘failed to fetch" error which might come
+
+	"Failed to fetch http://dl.google.com/linux/chrome/deb/dists/stable/Release
+	Unable to find expected entry ‘main/binary-i386/Packages’ in Release file 
+	(Wrong sources.list entry or malformed file)"
+	
+	1. Open a new Terminal window and run the following command (assuming you’re on the Stable Channel,
+		if not, see the featured comment):
+
+		sudo gedit /etc/apt/sources.list.d/google-chrome.list
+		
+	2.In the text file that opens edit the file so that the line reads:
+		
+		deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main
+			
+		The only addition you need to make is entering the [amd64] architecture after
+		‘deb’ but preceding the ‘http’. Do not edit or replace any other text in this file.
+		
+	3.Hit Save. Close the Gedit window.
+
+		Now return to the Terminal and refresh your package list by running:
+
+		sudo apt-get update
 
 #### (NOTE) - Update Node by deleting the previous version and installing the newer one
 
