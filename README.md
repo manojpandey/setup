@@ -163,8 +163,17 @@ It consists of setting up common tools, apps,  python and ruby development setup
     $
 
 ## Dropbox
-    $ sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
-    $ sudo apt-get install dropbox
+* 32-bit:
+
+    $ cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86" | tar xzf -  
+    $ ~/.dropbox-dist/dropboxd
+
+* 64-bit:
+
+    $ cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -  
+    $ ~/.dropbox-dist/dropboxd
+
+
 
 ## Skype
     $ sudo sh -c "echo 'deb http://archive.canonical.com/ubuntu/ trusty partner' >> /etc/apt/sources.list.d/canonical_partner.list"
