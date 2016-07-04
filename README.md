@@ -321,7 +321,20 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	Add guake to Startup Applications
 	Change shortcut to shift++.
 
+###Flux: Bluelight filter to protect eyes at night
 	
+	# Download and install xflux-gui
+	cd /tmp
+	git clone "https://github.com/xflux-gui/xflux-gui.git"
+	cd xflux-gui
+	sudo python ./setup.py install
+
+	# Run flux
+	fluxgui
+	
+	# Required dependencies
+	$ sudo apt-get install git python-appindicator python-xdg python-pexpect python-gconf python-gtk2 python-glade2 -y
+
 ---
 #Node
 ## Remove any previously installed packages
