@@ -136,7 +136,9 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 - pypy: It's fun to write your own language in RPython and get a JIT-enabled interpreter for it for free
 
-		$
+		$ sudo add-apt-repository ppa:pypy/ppa
+		$ sudo apt-get update
+		$ sudo apt-get install pypy pypy-dev
 
 - HTTPie: A better curl than curl
 
@@ -162,7 +164,8 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 ## Django
 
-    $
+    $ sudo -H pip install django
+    
 
 ## Dropbox
 * 32-bit:
@@ -317,6 +320,8 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$ sudo apt-get install guake -y
 	Add guake to Startup Applications
 	Change shortcut to shift++.
+
+	
 ---
 #Node
 ## Remove any previously installed packages
