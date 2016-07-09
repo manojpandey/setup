@@ -132,7 +132,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 - Cython: Sometimes you just gotta write C
 
-		$ pip install Cython
+		$
 
 - pypy: It's fun to write your own language in RPython and get a JIT-enabled interpreter for it for free
 
