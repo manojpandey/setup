@@ -112,7 +112,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 - SQLAlchemy: Is there even a competitor for database ORMs? I honestly don't know the answer to that.
 
-		$
+		$ pip install SQLAlchemy
 
 - tox, mock, py.test, coverage, pylint, pep8: Makes testing actually enjoyable
 
@@ -120,7 +120,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 - Pandas / numpy: Awesome library for data analysis
 
-		$
+		$ pip install pandas
 
 - selfspy: Really cool "Quantified Self" daemon
 
@@ -132,7 +132,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 - Cython: Sometimes you just gotta write C
 
-		$
+		$ pip install Cython
 
 - pypy: It's fun to write your own language in RPython and get a JIT-enabled interpreter for it for free
 
@@ -142,7 +142,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 - HTTPie: A better curl than curl
 
-		$
+		$ sudo apt-get install httpie
 
 ## MOngoDB
 
