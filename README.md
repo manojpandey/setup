@@ -142,7 +142,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 - HTTPie: A better curl than curl
 
-		$
+		$ sudo apt-get install httpie
 
 ## MOngoDB
 
