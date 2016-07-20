@@ -153,7 +153,9 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 ## gcc
 
-	$
+	$ sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+	$ sudo apt-get update
+	$ sudo apt-get install gcc-4.9
 
 ## g++
 	$ sudo apt-get -y install g++
