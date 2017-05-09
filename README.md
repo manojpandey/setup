@@ -228,9 +228,9 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$ java -version
 	$ sudo apt-get install oracle-java8-set-default
 
-##	Swtiching between OpenJDK & Java 8
+##	Swtiching between OpenJDK & Java 8 ( or other Java versions )
 
-	& sudo update-alternatives --config java
+	$ sudo update-alternatives --config java
 
 ## Android Studio
 	$ sudo apt-add-repository ppa:paolorotolo/android-studio
