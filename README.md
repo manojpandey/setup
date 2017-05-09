@@ -228,7 +228,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$ java -version
 	$ sudo apt-get install oracle-java8-set-default
 
-	Swtiching between OpenJDK & Java 8
+##	Swtiching between OpenJDK & Java 8
 
 	& sudo update-alternatives --config java
 
