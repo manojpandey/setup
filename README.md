@@ -144,7 +144,7 @@ It consists of setting up common tools, apps,  python and ruby development setup
 
 		$ sudo apt-get install httpie
 
-## MOngoDB
+## MongoDB
 
 	$ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
 	$ echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
@@ -227,6 +227,10 @@ It consists of setting up common tools, apps,  python and ruby development setup
 	$ sudo apt-get install oracle-java8-installer
 	$ java -version
 	$ sudo apt-get install oracle-java8-set-default
+
+##	Swtiching between OpenJDK & Java 8 ( or other Java versions )
+
+	$ sudo update-alternatives --config java
 
 ## Android Studio
 	$ sudo apt-add-repository ppa:paolorotolo/android-studio
